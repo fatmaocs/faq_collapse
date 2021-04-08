@@ -1,0 +1,88 @@
+body
+{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+
+
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+.container .faq
+{
+    border: 1px solid rgb(190, 189, 189);
+    border-radius: 10px;
+    width: 40vw;
+    background-color: #f0f0f0;
+    padding: 0 2rem;
+
+    transition: 0.3s ease;
+
+
+}
+
+.container .faq .title
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .faq .title button{
+
+    background: transparent;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.container .faq .title button::before{
+
+    content: "\02795";
+}
+
+.container .faq .content
+{
+    padding-bottom: 1.5rem;
+    display: none;
+}
+
+.container .faq_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container .faq.active
+{
+    background-color: white;
+}
+
+.container .faq.active button::before
+{
+   content: "\2212";
+}
+
+.container .faq.active .content
+{
+    display: block;
+}
+
+@media(max-width:800)
+{
+    h1,h2
+    {
+        font-size: 18px;
+    }
+}
