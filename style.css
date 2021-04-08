@@ -45,9 +45,15 @@ h1{
 }
 
 
-.container .faq .title button::before{
+.container .faq  button::before{
 
-    content: "\02795";
+    content: "+";
+}
+
+.container .faq .title button:focus
+{
+    outline: 0;
+    border: 0;
 }
 
 .container .faq .content
